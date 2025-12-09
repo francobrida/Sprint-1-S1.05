@@ -2,10 +2,10 @@
 
 abstract class Shape {
 
-    private $width;
-    private $height;
+    private float $width;
+    private float $height;
 
-    public function __construct($width, $height){
+    public function __construct(float $width, float $height){
         $this->width = $width;
         $this->height = $height;
     }
@@ -18,11 +18,11 @@ abstract class Shape {
         return $this->height;
     }
 
-    public function setWidth($width){
+    public function setWidth(float $width){
         $this->width = $width;
     }
 
-    public function setHeight($height){
+    public function setHeight(float $height){
         $this->height = $height;
     }
 

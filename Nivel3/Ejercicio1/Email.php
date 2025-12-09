@@ -2,7 +2,7 @@
 
 class Email implements Notification {
 
-    public function notify($message) : string {
+    public function notify(string $message) : string {
         return "$message. You've been notified via Email.";
     }
    
