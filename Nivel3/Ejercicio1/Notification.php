@@ -2,7 +2,7 @@
 
 interface Notification {
 
-    public function notify(string $message) :string;
+    public function notify(string $message):string;
 
 }
 
