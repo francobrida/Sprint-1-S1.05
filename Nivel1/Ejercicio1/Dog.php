@@ -3,7 +3,7 @@
 class Dog extends Animal {
 
     public function speak() : string {
-        return "Woof";
+        return "Guau";
     }
 }
 

@@ -10,23 +10,15 @@ abstract class Shape {
         $this->height = $height;
     }
 
-    public function getWidth(){
+    public function getWidth():float{
         return $this->width;
     }
 
-    public function getHeight(){
+    public function getHeight():float{
         return $this->height;
     }
 
-    public function setWidth(float $width){
-        $this->width = $width;
-    }
-
-    public function setHeight(float $height){
-        $this->height = $height;
-    }
-
-    abstract function calculateArea(); 
+    abstract function calculateArea():float; 
 
 }
 
