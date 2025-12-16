@@ -1,6 +1,6 @@
 <?php
 
-class Circle implements Shape2 {
+class Circle extends Shape{
 
    private float $radius;
 
