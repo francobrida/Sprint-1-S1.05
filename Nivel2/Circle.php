@@ -2,14 +2,12 @@
 
 class Circle extends Shape{
 
-   private float $radius;
-
    public function __construct(float $radius){
-    $this->radius = $radius; 
+        parent::__construct(0, 0, $radius);
    }
-
+   
    public function calculateArea(): float {
-    return pi() * ($this->radius ** 2);
+    return pi() * ($this->getRadius() ** 2);
    }
 
 }

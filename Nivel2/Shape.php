@@ -2,12 +2,30 @@
 
 abstract class Shape {
 
+    private float $width;
+    private float $height;
+    private float $radius;
+
+    public function __construct(float $width, float $height, float $radius){
+        $this->width = $width;
+        $this->height = $height;
+        $this->radius = $radius;
+    }
+    
+    public function getWidth():float{
+        return $this->width;
+    }
+
+    public function getHeight():float{
+        return $this->height;
+    }
+
+    public function getRadius():float{
+        return $this->radius;
+    }
+
     abstract function calculateArea():float; 
 
 }
-
-/* I changed the interface to an abstract class, even though they only share a method 
-(and that made me think of an interface) Circle, Rectangle, etc ARE shapes. 
-Still, I'm yet a bit unsure about when to use each... */
 
 ?>
